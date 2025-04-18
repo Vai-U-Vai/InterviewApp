@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:focusableInTouchMode="true">
+
+        <!-- Full Name EditText -->
+        <EditText
+            android:id="@+id/fullNameEditText"
+            style="@style/EditTextStyle"
+            android:hint="@string/full_name_hint"
+            android:autofillHints="fullName"
+            android:importantForAutofill="yes"
+            android:inputType="textCapWords"/>
+
+        <!-- Age Label -->
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="@string/age_label" />
+
+        <!-- Age EditText -->
+        <EditText
+            android:id="@+id/ageEditText"
+            style="@style/EditTextStyle"
+            android:hint="@string/age_hint"
+            android:inputType="number" />
+
+        <!-- Salary Label -->
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="@string/salary_label" />
+
+        <!-- Salary SeekBar -->
+        <SeekBar
+            android:id="@+id/salarySeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="800"
+            android:progress="0"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/salary_label"/>
+
+        <!-- Salary Value TextView -->
+        <TextView
+            android:id="@+id/salaryValueTextView"
+            style="@style/TextViewStyle"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/salary_value_prefix" />
+
+        <!-- Question 1 -->
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="@string/question_1" />
+
+        <RadioGroup
+            android:id="@+id/question1RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question1Option1"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_1_option_1" />
+
+            <RadioButton
+                android:id="@+id/question1Option2"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_1_option_2" />
+
+            <RadioButton
+                android:id="@+id/question1Option3"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_1_option_3" />
+
+            <RadioButton
+                android:id="@+id/question1Option4"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_1_option_4" />
+        </RadioGroup>
+
+        <!-- Question 2 -->
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="@string/question_2" />
+
+        <RadioGroup
+            android:id="@+id/question2RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question2Option1"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_2_option_1" />
+
+            <RadioButton
+                android:id="@+id/question2Option2"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_2_option_2" />
+
+            <RadioButton
+                android:id="@+id/question2Option3"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_2_option_3" />
+
+            <RadioButton
+                android:id="@+id/question2Option4"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_2_option_4" />
+        </RadioGroup>
+
+        <!-- Question 3 -->
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="@string/question_3" />
+
+        <RadioGroup
+            android:id="@+id/question3RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question3Option1"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_3_option_1" />
+
+            <RadioButton
+                android:id="@+id/question3Option2"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_3_option_2" />
+
+            <RadioButton
+                android:id="@+id/question3Option3"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_3_option_3" />
+
+            <RadioButton
+                android:id="@+id/question3Option4"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_3_option_4" />
+        </RadioGroup>
+
+        <!-- Question 4 -->
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="@string/question_4" />
+
+        <RadioGroup
+            android:id="@+id/question4RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question4Option1"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_4_option_1" />
+
+            <RadioButton
+                android:id="@+id/question4Option2"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_4_option_2" />
+
+            <RadioButton
+                android:id="@+id/question4Option3"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_4_option_3" />
+
+            <RadioButton
+                android:id="@+id/question4Option4"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_4_option_4" />
+        </RadioGroup>
+
+        <!-- Question 5 -->
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="@string/question_5" />
+
+        <RadioGroup
+            android:id="@+id/question5RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question5Option1"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_5_option_1" />
+
+            <RadioButton
+                android:id="@+id/question5Option2"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_5_option_2" />
+
+            <RadioButton
+                android:id="@+id/question5Option3"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_5_option_3" />
+
+            <RadioButton
+                android:id="@+id/question5Option4"
+                style="@style/RadioButtonStyle"
+                android:text="@string/answer_5_option_4" />
+        </RadioGroup>
+
+        <!-- CheckBoxes -->
+        <CheckBox
+            android:id="@+id/experienceCheckBox"
+            style="@style/CheckBoxStyle"
+            android:text="@string/experience_label" />
+
+        <CheckBox
+            android:id="@+id/teamworkCheckBox"
+            style="@style/CheckBoxStyle"
+            android:text="@string/teamwork_label" />
+
+        <CheckBox
+            android:id="@+id/travelCheckBox"
+            style="@style/CheckBoxStyle"
+            android:text="@string/travel_label" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            style="@style/ButtonStyle"
+            android:text="@string/submit_button" />
+
+        <!-- Result TextView -->
+        <TextView
+            android:id="@+id/resultTextView"
+            style="@style/TextViewStyle"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</ScrollView>

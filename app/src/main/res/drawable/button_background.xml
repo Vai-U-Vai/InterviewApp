@@ -1,0 +1,20 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Фон кнопки в обычном состоянии -->
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/primary" /> <!-- Цвет фона -->
+            <corners android:radius="8dp" /> <!-- Скруглённые углы -->
+            <stroke
+                android:width="1dp"
+                android:color="@color/primary_variant" /> <!-- Обводка -->
+        </shape>
+    </item>
+
+    <!-- Фон кнопки при нажатии -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/primary_variant" /> <!-- Цвет фона при нажатии -->
+            <corners android:radius="8dp" /> <!-- Скруглённые углы -->
+        </shape>
+    </item>
+</selector>

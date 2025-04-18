@@ -1,0 +1,29 @@
+# Build folder
+/build
+
+# Compiled Java class files
+*.class
+
+# Generated files
+/captures/
+bin/
+gen/
+out/
+
+# Gradle files
+.gradle/
+/local.properties
+/*.keystore
+/keystores/
+
+# Log Files
+*.log
+
+# Android Studio generated files
+.idea/
+.DS_Store
+*.iml
+
+#NDK
+*.o
+*.so

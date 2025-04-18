@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">InterviewApp</string>
+
+    <!-- Поля анкеты -->
+    <string name="full_name_label">ФИО:</string>
+    <string name="full_name_hint">Иванов Иван Иванович</string>
+
+    <string name="age_label">Возраст:</string>
+    <string name="age_hint">21</string>
+
+    <string name="salary_label">Желаемая зарплата:</string>
+    <string name="submit_button">Сдать тест</string>
+    <string name="salary_value_prefix">Зарплата: </string>
+
+    <!-- Вопрос 1 -->
+    <string name="question_1">Сколько основных числовых типов данных в Kotlin?</string>
+    <string name="answer_1_option_1">4</string>
+    <string name="answer_1_option_2">6</string>  <!-- Byte, Short, Int, Long, Float, Double -->
+    <string name="answer_1_option_3">8</string>
+    <string name="answer_1_option_4">10</string>
+
+    <!-- Вопрос 2 -->
+    <string name="question_2">Что такое data class в Kotlin?</string>
+    <string name="answer_2_option_1">Класс для хранения данных</string>
+    <string name="answer_2_option_2">Класс для работы с сетью</string>
+    <string name="answer_2_option_3">Класс для UI</string>
+    <string name="answer_2_option_4">Класс для анимации</string>
+
+    <!-- Вопрос 3 -->
+    <string name="question_3">Какое ключевое слово используется для объявления переменной, которую нельзя изменить?</string>
+    <string name="answer_3_option_1">var</string>
+    <string name="answer_3_option_2">val</string>
+    <string name="answer_3_option_3">const</string>
+    <string name="answer_3_option_4">static</string>
+
+    <!-- Вопрос 4 -->
+    <string name="question_4">Что такое корутины в Kotlin?</string>
+    <string name="answer_4_option_1">Способ организации многопоточности</string>
+    <string name="answer_4_option_2">Библиотека для работы с UI</string>
+    <string name="answer_4_option_3">Инструмент для создания анимаций</string>
+    <string name="answer_4_option_4">Фреймворк для веб-разработки</string>
+
+    <!-- Вопрос 5 -->
+    <string name="question_5">Какой ключевое слово используется для создания extension function в Kotlin?</string>
+    <string name="answer_5_option_1">extend</string>
+    <string name="answer_5_option_2">extension</string>
+    <string name="answer_5_option_3">addFunction</string>
+    <string name="answer_5_option_4">withExtension</string>
+
+
+    <string name="experience_label">Опыт работы от 2 лет</string>
+    <string name="teamwork_label">Навыки командной разработки</string>
+    <string name="travel_label">Готовность к командировкам</string>
+
+    <string name="test_passed_message">Поздравляем! Вы прошли тест.</string>
+    <string name="test_failed_message">К сожалению, вы не прошли тест.</string>
+    <string name="company_contacts">Контакты компании:</string>
+
+    <string name="error_name_required">Пожалуйста, введите ФИО.</string>
+    <string name="error_age_invalid">Возраст должен быть от 21 до 40 лет.</string>
+</resources>

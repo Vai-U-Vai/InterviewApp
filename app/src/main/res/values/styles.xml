@@ -1,0 +1,61 @@
+<resources>
+    <!-- Основной шрифт -->
+    <font name="roboto" font="@font/roboto_regular" />
+
+    <!-- Стиль для EditText -->
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@drawable/edittext_background</item> <!-- Кастомный фон -->
+        <item name="android:textColor">@color/primary_text</item> <!-- Цвет текста -->
+        <item name="android:textSize">16sp</item> <!-- Размер текста -->
+        <item name="android:fontFamily">@font/roboto</item> <!-- Шрифт -->
+    </style>
+
+    <!-- Стиль для TextView -->
+    <style name="TextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">@color/primary_text</item> <!-- Цвет текста -->
+        <item name="android:textSize">16sp</item> <!-- Размер текста -->
+        <item name="android:fontFamily">@font/roboto</item> <!-- Шрифт -->
+    </style>
+
+    <!-- Стиль для RadioButton -->
+    <style name="RadioButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@color/primary_text</item> <!-- Цвет текста -->
+        <item name="android:textSize">16sp</item> <!-- Размер текста -->
+        <item name="android:fontFamily">@font/roboto</item> <!-- Шрифт -->
+    </style>
+
+    <!-- Стиль для CheckBox -->
+    <style name="CheckBoxStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">@color/primary_text</item> <!-- Цвет текста -->
+        <item name="android:textSize">16sp</item> <!-- Размер текста -->
+        <item name="android:fontFamily">@font/roboto</item> <!-- Шрифт -->
+    </style>
+
+    <!-- Стиль для Button -->
+    <style name="ButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/button_background</item> <!-- Кастомный фон -->
+        <item name="android:textColor">@color/white</item> <!-- Цвет текста -->
+        <item name="android:textSize">18sp</item> <!-- Размер текста -->
+        <item name="android:fontFamily">@font/roboto</item> <!-- Шрифт -->
+        <item name="android:padding">12dp</item> <!-- Отступы внутри кнопки -->
+    </style>
+
+</resources>
