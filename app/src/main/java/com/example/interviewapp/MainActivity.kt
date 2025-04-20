@@ -97,16 +97,10 @@ class MainActivity : AppCompatActivity() {
             val checkedId = group.checkedRadioButtonId
             if (checkedId != -1) {
                 val radioButton = findViewById<RadioButton>(checkedId)
-                val answerIndex = when (radioButton.id) {
-                    R.id.question1Option1, R.id.question2Option1, R.id.question3Option1, R.id.question4Option1, R.id.question5Option1 -> 0
-                    R.id.question1Option2, R.id.question2Option2, R.id.question3Option2, R.id.question4Option2, R.id.question5Option2 -> 1
-                    R.id.question1Option3, R.id.question2Option3, R.id.question3Option3, R.id.question4Option3, R.id.question5Option3 -> 2
-                    R.id.question1Option4, R.id.question2Option4, R.id.question3Option4, R.id.question4Option4, R.id.question5Option4 -> 3
-                    else -> -1
-                }
+                val answerIndex = radioButton.tag.toString().toInt()
 
                 if (answerIndex == correctAnswers[index]) {
-                    score += 2 // +2 балла за каждый правильный ответ
+                    score += 2
                 }
             }
         }
