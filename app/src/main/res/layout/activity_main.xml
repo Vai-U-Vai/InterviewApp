@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,13 +15,17 @@
         android:focusableInTouchMode="true">
 
         <!-- Full Name EditText -->
-        <EditText
-            android:id="@+id/fullNameEditText"
-            style="@style/EditTextStyle"
-            android:hint="@string/full_name_hint"
-            android:autofillHints="fullName"
-            android:importantForAutofill="yes"
-            android:inputType="textCapWords"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fullNameEditText"
+                style="@style/EditTextStyle"
+                android:hint="@string/full_name_hint"
+                android:autofillHints="fullName"
+                android:importantForAutofill="yes"
+                android:inputType="textCapWords" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Age Label -->
         <TextView
@@ -26,11 +33,15 @@
             android:text="@string/age_label" />
 
         <!-- Age EditText -->
-        <EditText
-            android:id="@+id/ageEditText"
-            style="@style/EditTextStyle"
-            android:hint="@string/age_hint"
-            android:inputType="number" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ageEditText"
+                style="@style/EditTextStyle"
+                android:hint="@string/age_hint"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Salary Label -->
         <TextView
@@ -54,6 +65,7 @@
             android:layout_gravity="center_horizontal"
             android:text="@string/salary_value_prefix" />
 
+        <!-- Questions -->
         <!-- Question 1 -->
         <TextView
             style="@style/TextViewStyle"
@@ -65,30 +77,30 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question1Option1"
                 style="@style/RadioButtonStyle"
                 android:tag="0"
                 android:text="@string/answer_1_option_1" />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question1Option2"
                 style="@style/RadioButtonStyle"
                 android:tag="1"
                 android:text="@string/answer_1_option_2" />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question1Option3"
                 style="@style/RadioButtonStyle"
                 android:tag="2"
                 android:text="@string/answer_1_option_3" />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question1Option4"
                 style="@style/RadioButtonStyle"
                 android:tag="3"
                 android:text="@string/answer_1_option_4" />
-        </RadioGroup>
+        </RadioGroup>>
 
         <!-- Question 2 -->
         <TextView
@@ -101,28 +113,28 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question2Option1"
                 style="@style/RadioButtonStyle"
-                 android:tag="0"
+                android:tag="0"
                 android:text="@string/answer_2_option_1" />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question2Option2"
                 style="@style/RadioButtonStyle"
-                 android:tag="1"
+                android:tag="1"
                 android:text="@string/answer_2_option_2" />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question2Option3"
                 style="@style/RadioButtonStyle"
-                 android:tag="2"
+                android:tag="2"
                 android:text="@string/answer_2_option_3" />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question2Option4"
                 style="@style/RadioButtonStyle"
-                 android:tag="3"
+                android:tag="3"
                 android:text="@string/answer_2_option_4" />
         </RadioGroup>
 
@@ -137,28 +149,28 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question3Option1"
                 style="@style/RadioButtonStyle"
-                 android:tag="0"
+                android:tag="0"
                 android:text="@string/answer_3_option_1" />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question3Option2"
                 style="@style/RadioButtonStyle"
-                 android:tag="1"
+                android:tag="1"
                 android:text="@string/answer_3_option_2" />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question3Option3"
                 style="@style/RadioButtonStyle"
                 android:tag="2"
                 android:text="@string/answer_3_option_3" />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question3Option4"
                 style="@style/RadioButtonStyle"
-                 android:tag="3"
+                android:tag="3"
                 android:text="@string/answer_3_option_4" />
         </RadioGroup>
 
@@ -173,31 +185,30 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question4Option1"
                 style="@style/RadioButtonStyle"
-                 android:tag="0"
+                android:tag="0"
                 android:text="@string/answer_4_option_1" />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question4Option2"
                 style="@style/RadioButtonStyle"
-                 android:tag="1"
+                android:tag="1"
                 android:text="@string/answer_4_option_2" />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question4Option3"
                 style="@style/RadioButtonStyle"
-                 android:tag="2"
+                android:tag="2"
                 android:text="@string/answer_4_option_3" />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question4Option4"
                 style="@style/RadioButtonStyle"
-                 android:tag="3"
+                android:tag="3"
                 android:text="@string/answer_4_option_4" />
-        </RadioGroup>
-
+        </RadioGroup>>
         <!-- Question 5 -->
         <TextView
             style="@style/TextViewStyle"
@@ -209,49 +220,50 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question5Option1"
                 style="@style/RadioButtonStyle"
-                 android:tag="0"
+                android:tag="0"
                 android:text="@string/answer_5_option_1" />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question5Option2"
                 style="@style/RadioButtonStyle"
-                 android:tag="1"
+                android:tag="1"
                 android:text="@string/answer_5_option_2" />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question5Option3"
                 style="@style/RadioButtonStyle"
-                 android:tag="2"
+                android:tag="2"
                 android:text="@string/answer_5_option_3" />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/question5Option4"
                 style="@style/RadioButtonStyle"
-                 android:tag="3"
+                android:tag="3"
                 android:text="@string/answer_5_option_4" />
         </RadioGroup>
 
+
         <!-- CheckBoxes -->
-        <CheckBox
+        <com.google.android.material.checkbox.MaterialCheckBox
             android:id="@+id/experienceCheckBox"
             style="@style/CheckBoxStyle"
             android:text="@string/experience_label" />
 
-        <CheckBox
+        <com.google.android.material.checkbox.MaterialCheckBox
             android:id="@+id/teamworkCheckBox"
             style="@style/CheckBoxStyle"
             android:text="@string/teamwork_label" />
 
-        <CheckBox
+        <com.google.android.material.checkbox.MaterialCheckBox
             android:id="@+id/travelCheckBox"
             style="@style/CheckBoxStyle"
             android:text="@string/travel_label" />
 
         <!-- Submit Button -->
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/submitButton"
             style="@style/ButtonStyle"
             android:text="@string/submit_button" />
@@ -263,4 +275,4 @@
             android:visibility="gone"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
-</ScrollView>
+</androidx.core.widget.NestedScrollView>

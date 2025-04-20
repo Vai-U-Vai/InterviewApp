@@ -1,22 +1,33 @@
 <resources>
-    <!-- Основные цвета -->
-    <color name="primary">#6200EE</color> <!-- Основной цвет (фиолетовый) -->
-    <color name="primary_variant">#3700B3</color> <!-- Вариант основного цвета -->
-    <color name="secondary">#03DAC6</color> <!-- Вспомогательный цвет (бирюзовый) -->
-    <color name="background">#FFFFFF</color> <!-- Фон (белый) -->
-    <color name="surface">#F5F5F5</color> <!-- Поверхность (серый) -->
-    <color name="error">#D32F2F</color> <!-- Цвет ошибки (красный) -->
+    <!-- Цвета для Material Design 3 -->
+    <color name="md_theme_light_primary">#6750A4</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#EADDFF</color>
+    <color name="md_theme_light_onPrimaryContainer">#21005D</color>
 
-    <!-- Цвета текста -->
-    <color name="primary_text">#212121</color> <!-- Основной цвет текста (тёмно-серый) -->
-    <color name="secondary_text">#757575</color> <!-- Вспомогательный цвет текста (серый) -->
-    <color name="white">#FFFFFF</color> <!-- Белый цвет -->
+    <color name="md_theme_light_secondary">#625B71</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#E8DEF8</color>
+    <color name="md_theme_light_onSecondaryContainer">#1D192B</color>
 
-    <!-- Дополнительные цвета -->
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <color name="md_theme_light_background">#FFFBFE</color>
+    <color name="md_theme_light_onBackground">#1C1B1F</color>
+
+    <color name="md_theme_light_surface">#FFFBFE</color>
+    <color name="md_theme_light_onSurface">#1C1B1F</color>
+
+    <color name="md_theme_light_error">#B3261E</color>
+    <color name="md_theme_light_onError">#FFFFFF</color>
+    <color name="md_theme_light_errorContainer">#F9DEDC</color>
+    <color name="md_theme_light_onErrorContainer">#410E0B</color>
+
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="surface">@color/md_theme_light_surface</color>
+
+
+    <!-- Прочие цвета, если надо -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
 </resources>

@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.button.MaterialButton
+import com.google.android.material.checkbox.MaterialCheckBox
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,11 +14,12 @@ class MainActivity : AppCompatActivity() {
     private lateinit var ageEditText: EditText
     private lateinit var salarySeekBar: SeekBar
     private lateinit var salaryValueTextView: TextView
-    private lateinit var experienceCheckBox: CheckBox
-    private lateinit var teamworkCheckBox: CheckBox
-    private lateinit var travelCheckBox: CheckBox
-    private lateinit var submitButton: Button
+    private lateinit var experienceCheckBox: MaterialCheckBox
+    private lateinit var teamworkCheckBox: MaterialCheckBox
+    private lateinit var travelCheckBox: MaterialCheckBox
+    private lateinit var submitButton: MaterialButton
     private lateinit var resultTextView: TextView
+
 
     // Правильные ответы (индексы начинаются с 0)
     private val correctAnswers = listOf(1, 0, 1, 0, 1) // Номера правильных вариантов для вопросов 1-5
